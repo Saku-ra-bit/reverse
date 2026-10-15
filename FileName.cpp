@@ -206,19 +206,36 @@
 //	return 0;
 //}
 
-#include <stdio.h>
-int main()
-{
-	long n = 0, k = 0,count = 0;
-	scanf("%ld %ld", &n, &k);
-	for(long i = 0,j = 0; i < n; i++,j++, count++)
-	{
-		if (j == k)
-		{
-			j = 0;
-			n++;
-		}
-	}
-	printf("%ld", count);
-}
+//P1150
+//#include <stdio.h>
+//int main()
+//{
+//	long n = 0, k = 0,count = 0;
+//	scanf("%ld %ld", &n, &k);
+//	for(long i = 0,j = 0; i < n; i++, count++)
+//	{
+//		j++;
+//		if (j == k)
+//		{
+//			j = 0;
+//			n++;
+//		}
+//	}
+//	printf("%ld", count);
+//}
 
+//P1150 N.2 resolution
+//#include <stdio.h>
+//int main()
+//{
+//	long n = 0, k = 0;
+//	scanf("%ld %ld", &n, &k);
+//	int count = n;
+//	while(n/k>0)
+//	{
+//		count += n / k;
+//		n = n / k + n % k;
+//	}
+//	printf("%ld", count	);
+//	return 0;
+//}
